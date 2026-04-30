@@ -212,7 +212,7 @@ export default function Consejo() {
             
             <div className="bg-zinc-900/80 border border-zinc-800 rounded-xl p-4 flex gap-4 items-start w-full">
               <div className="bg-zinc-800 p-2.5 rounded-lg text-zinc-400 mt-1">
-                <bot className="w-5 h-5" />
+                <Bot className="w-5 h-5" />
                 <Award className="w-5 h-5" />
               </div>
               <div className="flex-1">
