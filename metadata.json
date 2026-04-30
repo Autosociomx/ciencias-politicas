@@ -1,0 +1,6 @@
+{
+  "name": "Alquimia Consejo",
+  "description": "Módulo de Consejo Deliberativo con tres agentes AI (Claude, Manus, Gemini) haciendo críticas cruzadas y recomendaciones en una UI limpia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
