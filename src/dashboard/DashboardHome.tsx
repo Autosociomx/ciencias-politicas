@@ -24,6 +24,21 @@ const KPI_GLOBAL = [
   { label: 'Recaudación predial digital', actual: 'Base', meta6m: '+20%', color: '#5DD39E' },
 ];
 
+const IMPACTO = [
+  { ic: '⚡', val: '40%', label: 'menos tiempo en trámites', src: 'Estrategia Digital 2027–2033' },
+  { ic: '🌱', val: '+25%', label: 'rendimiento agrícola', src: 'AgroVision · Nayarit' },
+  { ic: '🔍', val: '100%', label: 'transparencia auditada', src: 'Obra Pública Cloud' },
+];
+
+const ECOSISTEMA = [
+  { ic: '🚛', nombre: 'RoutePro Elite MAÍZ', cat: 'Logística agrícola', d: 'Optimización de rutas de distribución para productores de maíz y granos básicos. Integración con ASERCA.' },
+  { ic: '🛰️', nombre: 'AgroVision 3D', cat: 'Mapeo agrícola', d: 'Modelos 3D de parcelas con LiDAR y drones. Inventario digital de toda la superficie cultivable nayarita.' },
+  { ic: '🧠', nombre: 'Alquimia Consejo', cat: 'IA de gobierno', d: 'Plataforma de consejo estratégico con IA. Analiza datos de todos los módulos y genera recomendaciones de política pública.' },
+  { ic: '📡', nombre: 'Conecta X Radar', cat: 'Inteligencia de demanda', d: 'Monitoreo en tiempo real de necesidades ciudadanas. Detecta tendencias antes de que escalen a crisis.' },
+  { ic: '🛵', nombre: 'Vamos · Mandaditos', cat: 'Última milla', d: 'Red de entrega local hiperlocal. Conecta pequeños comercios con colonias periféricas en menos de 45 minutos.' },
+  { ic: '📊', nombre: 'ConnectX Intel', cat: 'Dashboard ejecutivo', d: 'Panel de control para presidentes municipales y secretarios. KPIs de gobierno en tiempo real, sin intermediarios.' },
+];
+
 export default function DashboardHome({ onNavigate }: DashboardHomeProps) {
   const fases = [1, 2, 3] as const;
 
@@ -128,6 +143,48 @@ export default function DashboardHome({ onNavigate }: DashboardHomeProps) {
           </div>
         );
       })}
+
+      {/* Impacto proyectado */}
+      <div style={{ background: 'var(--tinta)', borderRadius: '1rem', padding: '1.8rem', marginBottom: '2.5rem' }}>
+        <p style={{ fontFamily: 'var(--mono)', fontSize: '.58rem', fontWeight: 600, letterSpacing: '.18em', textTransform: 'uppercase', color: 'rgba(254,248,238,.45)', marginBottom: '1.2rem' }}>
+          Impacto proyectado · Estrategia Digital Nayarit 2027–2033
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
+          {IMPACTO.map((item) => (
+            <div key={item.val} style={{ textAlign: 'center' }}>
+              <span style={{ fontSize: '2rem', display: 'block', marginBottom: '.3rem' }}>{item.ic}</span>
+              <span style={{ fontFamily: 'var(--frau)', fontVariationSettings: '"opsz" 144', fontWeight: 900, fontSize: '2.2rem', color: 'var(--solar)', display: 'block', lineHeight: 1 }}>{item.val}</span>
+              <span style={{ fontFamily: 'var(--inst)', fontSize: '.75rem', color: 'var(--crema)', display: 'block', marginTop: '.25rem' }}>{item.label}</span>
+              <span style={{ fontFamily: 'var(--mono)', fontSize: '.48rem', color: 'rgba(254,248,238,.35)', display: 'block', marginTop: '.2rem', letterSpacing: '.06em' }}>{item.src}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Ecosistema ConnectX */}
+      <div style={{ marginBottom: '2.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+          <h2 style={{ fontFamily: 'var(--frau)', fontVariationSettings: '"opsz" 60', fontWeight: 900, fontSize: '1.05rem', color: 'var(--tinta)', letterSpacing: '-.02em' }}>
+            Ecosistema ConnectX
+          </h2>
+          <div style={{ flex: 1, height: 1, background: 'rgba(21,8,0,.1)' }} />
+          <span style={{ fontFamily: 'var(--mono)', fontSize: '.52rem', letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--gris)' }}>Productos relacionados</span>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '.8rem' }}>
+          {ECOSISTEMA.map((p) => (
+            <div key={p.nombre} style={{ background: 'var(--blanco)', border: '1.5px solid rgba(21,8,0,.1)', borderRadius: '1rem', padding: '1.1rem 1.2rem', display: 'flex', gap: '.8rem', alignItems: 'flex-start' }}>
+              <span style={{ fontSize: '1.7rem', lineHeight: 1, flexShrink: 0 }}>{p.ic}</span>
+              <div>
+                <div style={{ fontFamily: 'var(--inst)', fontWeight: 700, fontSize: '.82rem', color: 'var(--tinta)', marginBottom: '.15rem' }}>{p.nombre}</div>
+                <span style={{ fontFamily: 'var(--mono)', fontSize: '.5rem', fontWeight: 600, letterSpacing: '.1em', textTransform: 'uppercase', background: 'rgba(229,0,122,.08)', color: 'var(--magenta)', padding: '.15rem .55rem', borderRadius: '2rem', display: 'inline-block', marginBottom: '.4rem' }}>
+                  {p.cat}
+                </span>
+                <p style={{ fontFamily: 'var(--mono)', fontSize: '.57rem', color: 'var(--gris)', lineHeight: 1.55 }}>{p.d}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* Presupuesto total */}
       <div style={{ background: 'var(--hueso)', border: '2px solid var(--tinta)', borderRadius: '1rem', padding: '1.5rem 1.8rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', boxShadow: '5px 5px 0 var(--solar)' }}>
