@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Jala Digital
 
-# Run and deploy your AI Studio app
+Plataforma de campaña para la presidencia municipal de Jala, Nayarit, en 2027.
+La figura de esta plataforma es Miguel Alexis. El municipio piloto es Jala.
+El estándar técnico vive en [Gobernanza-Digital](https://github.com/Autosociomx/Gobernanza-Digital).
 
-This contains everything you need to run your app locally.
+Esto **no** es un sitio oficial del Ayuntamiento ni un respaldo de la Presidencia de la República.
 
-View your app in AI Studio: https://ai.studio/apps/fd0734b2-4f8f-411f-afcc-09f06c414ebc
+## La idea, en una frase
 
-## Run Locally
+El ciudadano es el automóvil. El gobierno es la autopista. El Orbe es la voz que guía el trámite.
+Nadie tiene que aprenderse el organigrama.
 
-**Prerequisites:**  Node.js
+## Qué promete y qué no
 
+Promete una propuesta comprobable:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Un solo portal municipal, acoplado a la Ley Nacional para Eliminar Trámites Burocráticos (DOF, 16 de julio de 2025), a Llave MX y a la Agencia de Transformación Digital y Telecomunicaciones.
+- Expediente de citas y medicamentos solo si IMSS, el centro de salud o IMSS-Bienestar autorizan la interoperabilidad.
+- Triaje de cinco colores, al modo Manchester, con lenguaje CIE-10 y CIE-11 para la ficha del médico.
+- La inteligencia artificial **no diagnostica, no recomienda medicamento y no da receta**.
+- Llave del tutor para la niñez: la plataforma recibe un permiso, no el CURP ni la foto del niño.
+- Si el piloto de Jala funciona, el mismo estándar puede servir a otro municipio sin copiar los datos de las personas.
+
+No promete cargos ya ganados, seguidores, recaudación ni obras que este repositorio no puede mostrar.
+
+## Cómo verla
+
+1. Instala dependencias: `npm install`
+2. Arranca: `npm run dev`
+3. Abre la dirección que muestre la terminal.
+4. En la página, el botón ConnectX abre el tablero de los nueve módulos. Son prototipos de campaña, no servicios en operación.
+
+No hace falta una llave de inteligencia artificial para leer la campaña. El asistente de la portada responde con textos fijos.

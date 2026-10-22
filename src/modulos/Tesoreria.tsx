@@ -47,10 +47,10 @@ export default function Tesoreria({ onBack }: Props) {
         <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>🏛️</span>
         <div>
           <p style={{ fontFamily: 'var(--frau)', fontVariationSettings: '"opsz" 30', fontStyle: 'italic', fontWeight: 600, fontSize: '1rem', color: '#fff', lineHeight: 1.4, marginBottom: '.4rem' }}>
-            "Tepic: primer municipio de Nayarit con predial 100% digital. En el debate: 'Aquí están los números de recaudación — sin mentiras.'"
+            "Jala puede enseñar el recibo digital antes de prometer el porcentaje de recaudación. Sin número medido, no hay eslogan de cifra."
           </p>
           <p style={{ fontFamily: 'var(--mono)', fontSize: '.55rem', color: 'rgba(255,255,255,.65)', letterSpacing: '.1em', textTransform: 'uppercase' }}>
-            Argumento electoral irrebutible · Plan Operativo ConnectX 2026
+            Propuesta de campaña · no es recaudación ya lograda
           </p>
         </div>
       </div>

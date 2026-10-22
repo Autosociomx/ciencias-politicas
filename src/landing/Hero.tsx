@@ -115,19 +115,19 @@ export default function Hero({ onNavigate }: HeroProps) {
       <div className="hero-texto">
         <div className="eyebrow">
           <span className="pt" />
-          Nayarit · Gobernatura · 2027
+          Jala · Presidencia municipal · 2027
         </div>
         <h1 className="hero-nombre">
-          <span className="fn">Geraldine</span>
-          <span className="ln">Ponce</span>
+          <span className="fn">Miguel</span>
+          <span className="ln">Alexis</span>
         </h1>
         <p className="hero-cargo">
-          <strong>Presidenta Municipal de Tepic</strong>,<br />
-          primera mujer en gobernar la capital de Nayarit
+          <strong>Jala Digital</strong>,<br />
+          el primer municipio donde el gobierno entiende al ciudadano
         </p>
         <p className="hero-tagline">
-          La gobernante que <em>ya transformó Tepic.</em><br />
-          Ahora lleva ese cambio a los 20 municipios de Nayarit.
+          El ciudadano es el automóvil. <em>El gobierno es la autopista.</em><br />
+          Un Orbe, por voz, te guía. Tú no estudias el organigrama.
         </p>
         <div className="hero-btns">
           <a href="#pilares" className="btn-a">Ver la propuesta →</a>
@@ -139,16 +139,16 @@ export default function Hero({ onNavigate }: HeroProps) {
 
       <div className="hero-foto">
         <div className="foto-frame" ref={fotoRef}>
-          <img
-            className="foto-img"
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=800&fit=crop&crop=faces&auto=format&q=85"
-            alt="Geraldine Ponce — Presidenta Municipal de Tepic"
-            loading="eager"
-          />
-          <div className="foto-label">1ª Presidenta Municipal de Tepic</div>
+          <div className="foto-img orbe-card" role="img" aria-label="Emblema del Orbe de Jala Digital">
+            <span className="orbe-kicker">Nayarit Digital</span>
+            <strong>Un portal.</strong>
+            <em>Una voz.</em>
+            <span>Cero filas para entender quién te toca.</span>
+          </div>
+          <div className="foto-label">Piloto municipal · Jala</div>
           <div className="foto-badge">
-            <span className="n">30</span>
-            <span className="t">años · Tepic</span>
+            <span className="n">2027</span>
+            <span className="t">propuesta · no cargo</span>
           </div>
         </div>
       </div>

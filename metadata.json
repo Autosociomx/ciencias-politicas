@@ -1,6 +1,6 @@
 {
-  "name": "Alquimia Consejo",
-  "description": "Módulo de Consejo Deliberativo con tres agentes AI (Claude, Manus, Gemini) haciendo críticas cruzadas y recomendaciones en una UI limpia.",
+  "name": "Jala Digital",
+  "description": "Plataforma de campaña para la presidencia municipal de Jala: Nayarit Digital, Orbe, expediente y llave del tutor. Prototipo cívico, no sitio oficial.",
   "requestFramePermissions": [],
   "majorCapabilities": []
 }

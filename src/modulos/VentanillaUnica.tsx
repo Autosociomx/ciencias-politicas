@@ -27,7 +27,7 @@ export default function VentanillaUnica({ onBack }: Props) {
           ⚖️ Mandato legal: LNETB 2025
         </p>
         <p style={{ fontFamily: 'var(--inst)', fontSize: '.82rem', color: 'var(--tinta)', lineHeight: 1.65 }}>
-          La <strong>Ley Nacional para Eliminar Trámites Burocráticos</strong> (vigente desde julio 2025) obliga a todos los municipios a crear una <em>Autoridad Local de Digitalización</em> antes de finales de 2026. Solo el 3% de los municipios mexicanos han cumplido. Tepic puede ser el primero de Nayarit en alcanzar el 100%.
+          La <strong>Ley Nacional para Eliminar Trámites Burocráticos</strong>, publicada el 16 de julio de 2025, aplica a Federación, estados y municipios. La Agencia de Transformación Digital y Telecomunicaciones la implementa. Jala Digital propone cumplirla con Llave MX y un solo Orbe, no con un sistema paralelo.
         </p>
       </div>
 
@@ -50,9 +50,9 @@ export default function VentanillaUnica({ onBack }: Props) {
         {[
           { sem: 'Sem 1', accion: 'Auditoría de todos los trámites municipales actuales', resp: 'ConnectX + Secretaría' },
           { sem: 'Sem 2–3', accion: 'Digitalización de los 10 trámites de mayor demanda', resp: 'Equipo técnico' },
-          { sem: 'Sem 4', accion: 'Demo ante el Cabildo + comunicado de prensa', resp: 'Presidenta + Comunicación' },
-          { sem: 'Mes 3', accion: '50% de trámites en el portal — cumplimiento parcial LNETB', resp: 'Todas las dependencias' },
-          { sem: 'Mes 6', accion: '90%+ de trámites digitales — Tepic cumple LNETB al 100%', resp: 'Ayuntamiento + ConnectX' },
+          { sem: 'Sem 4', accion: 'Demo ante el Cabildo + comunicado claro de que es piloto', resp: 'Presidencia + Comunicación' },
+          { sem: 'Mes 3', accion: 'Primeros trámites de mayor demanda en el Orbe', resp: 'Dependencias que acepten el piloto' },
+          { sem: 'Mes 6', accion: 'Inventario público de lo digitalizado y lo que sigue en ventanilla', resp: 'Ayuntamiento + equipo técnico' },
         ].map((paso) => (
           <div key={paso.sem} style={{ background: 'var(--blanco)', border: '1.5px solid rgba(21,8,0,.1)', borderRadius: '.8rem', padding: '.8rem 1.1rem', display: 'grid', gridTemplateColumns: '70px 1fr auto', gap: '.7rem', alignItems: 'center' }}>
             <span style={{ fontFamily: 'var(--mono)', fontSize: '.58rem', fontWeight: 600, color: 'var(--morado)', letterSpacing: '.08em' }}>{paso.sem}</span>

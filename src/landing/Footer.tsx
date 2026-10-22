@@ -1,14 +1,12 @@
+import { AVISO, FIGURA } from '../campana/plataforma';
+
 export default function Footer() {
   return (
     <footer>
-      <span className="ft-logo">Geraldine <em>Ponce</em></span>
-      <p className="ft-sub">Presidenta Municipal de Tepic · Candidata a Gobernadora de Nayarit 2027</p>
+      <span className="ft-logo">Jala <em>Digital</em></span>
+      <p className="ft-sub">{FIGURA.nombre} · {FIGURA.eleccion}</p>
       <div className="ft-arco" />
-      <p className="ft-cr">
-        Estrategia digital:{' '}
-        <a href="https://connectx.mx" target="_blank" rel="noopener">ConnectX</a>{' '}
-        · Tepic, Nayarit
-      </p>
+      <p className="ft-cr">{AVISO}</p>
     </footer>
   );
 }

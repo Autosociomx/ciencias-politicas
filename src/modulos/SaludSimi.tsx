@@ -14,10 +14,10 @@ export default function SaludSimi({ onBack }: Props) {
       </h2>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '.8rem', marginBottom: '1.5rem' }}>
         {[
-          { ic: '📶', t: '100% Offline', d: 'Funciona sin internet. Crítico para colonias periféricas de Tepic y futura sierra nayarita.' },
-          { ic: '🏥', t: 'Manchester Triage', d: 'Sistema de triaje internacionalmente validado. Clasifica urgencia en 5 niveles de color.' },
-          { ic: '🗣️', t: 'Voz en español MX', d: 'Instrucciones y preguntas en español mexicano. Accesible para adultos mayores.' },
-          { ic: '📋', t: 'CIE-11', d: 'Clasificación Internacional de Enfermedades versión 11. Base médica actualizada.' },
+          { ic: '📶', t: 'Sin señal', d: 'Pensado para localidades de Jala donde la red falla. Hoy es diseño, no una tablet ya entregada.' },
+          { ic: '🏥', t: 'Cinco colores', d: 'Clasifica urgencia al modo Manchester. No dice qué enfermedad tienes ni qué medicamento tomar.' },
+          { ic: '🗣️', t: 'Voz en español', d: 'El Orbe pregunta y acompaña. La decisión queda con el personal de salud.' },
+          { ic: '📋', t: 'CIE-10 y CIE-11', d: 'Sirven para ordenar la ficha que recibe el médico. No son una receta para el paciente.' },
         ].map((f) => (
           <div key={f.t} style={{ background: 'var(--blanco)', border: '1.5px solid rgba(21,8,0,.1)', borderRadius: '1rem', padding: '1.1rem', borderTop: `4px solid var(--verde)` }}>
             <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '.5rem' }}>{f.ic}</span>
@@ -31,7 +31,7 @@ export default function SaludSimi({ onBack }: Props) {
         Módulos DIF — Sitios de implementación
       </h2>
       <div style={{ display: 'flex', gap: '.6rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
-        {['Centro DIF Tepic', 'Col. Menchaca', 'Col. Ejidal', 'Ciudad del Valle', 'Periurbana Norte'].map((sitio) => (
+        {['Cabecera de Jala', 'Centro de salud', 'Referencia IMSS-Bienestar', 'DIF municipal', 'Localidad sin señal'].map((sitio) => (
           <div key={sitio} style={{ background: 'rgba(0,135,62,.1)', border: '1px solid rgba(0,135,62,.25)', borderRadius: '.6rem', padding: '.5rem .9rem', display: 'flex', alignItems: 'center', gap: '.5rem' }}>
             <span style={{ width: 7, height: 7, borderRadius: '50%', background: 'var(--verde)', flexShrink: 0 }} />
             <span style={{ fontFamily: 'var(--mono)', fontSize: '.6rem', color: 'var(--verde)', fontWeight: 600 }}>{sitio}</span>
@@ -42,7 +42,7 @@ export default function SaludSimi({ onBack }: Props) {
       <div style={{ background: 'var(--verde)', borderRadius: '1rem', padding: '1.2rem 1.4rem', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
         <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>💚</span>
         <p style={{ fontFamily: 'var(--frau)', fontVariationSettings: '"opsz" 30', fontStyle: 'italic', fontWeight: 600, fontSize: '1rem', color: '#fff', lineHeight: 1.4 }}>
-          "Inteligencia artificial del mar a la sierra. El promotor social lleva la tablet — no el ciudadano va a la oficina."
+          "La inteligencia artificial ordena la urgencia y entrega la ficha. No diagnostica, no recomienda y no da receta."
         </p>
       </div>
     </ModuloShell>

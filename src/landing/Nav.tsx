@@ -20,12 +20,12 @@ export default function Nav({ onNavigate }: NavProps) {
     <nav ref={navRef} id="nav">
       <a href="#inicio" className="nav-logo">
         <span className="gema" />
-        Geraldine Ponce
+        Jala Digital
       </a>
       <ul className="nav-links">
-        <li><a href="#logros">Logros</a></li>
+        <li><a href="#figura">Figura</a></li>
         <li><a href="#pilares">Propuesta</a></li>
-        <li><a href="#ia">Asistente IA</a></li>
+        <li><a href="#orbe">Orbe</a></li>
         <li>
           <button
             className="nav-links"
