@@ -7,9 +7,9 @@ interface Message {
 
 const RESPUESTAS = {
   default:
-    'Puedo explicarte el Orbe, la ley de trámites, la ficha de salud o la llave del tutor. No invento cargos ni resultados de gobierno. ¿Qué quieres revisar?',
+    'Puedo explicarte Palabra de mujer, Vamos, la estrategia de inteligencia artificial o los límites de salud. No invento cargos, fotos ni resultados. ¿Qué quieres revisar?',
   orbe:
-    'El Orbe es una voz dentro de un solo portal. Tú dices el trámite. Él te guía y deja folio. No sustituye a la persona funcionaria: evita que tú armes la ruta entre oficinas.',
+    'El Orbe guía el trámite y deja folio. No es la imagen de Vanessa Zúñiga. La imagen es su palabra. La máquina acompaña para que esa palabra se cumpla.',
   salud:
     'La ficha usa cinco colores, como el triaje Manchester, y el lenguaje CIE-10 y CIE-11 para ordenar lo que el médico va a evaluar. La inteligencia artificial no diagnostica, no recomienda un medicamento y no da receta.',
   llave:
@@ -17,7 +17,9 @@ const RESPUESTAS = {
   ley:
     'La Ley Nacional para Eliminar Trámites Burocráticos se publicó el 16 de julio de 2025. La Agencia de Transformación Digital y Telecomunicaciones la implementa. Jala Digital propone cumplirla con Llave MX, no crear un sistema paralelo.',
   jala:
-    'Jala es el municipio piloto: cerca de 19,300 habitantes en el Censo 2020. La figura de esta plataforma es Miguel Alexis, para la presidencia municipal de 2027. Todavía no es un cargo ni un sitio del Ayuntamiento.',
+    'Esta campaña es de Vanessa Zúñiga Rafael, por Morena, a la presidencia municipal de Jala en 2027. El lema es Palabra de mujer. El llamado es Vamos. En 2024 ella ya contendió por Morena a este mismo cargo. Esta página no afirma que ya ganó ni que el registro de 2027 esté publicado.',
+  estrategia:
+    'La inteligencia artificial no se usa para construir una imagen de tecnología. Se usa para escuchar lo que Jala pide, ordenar la palabra de campaña y dejar un rastro que se pueda abrir. El rostro sigue siendo el de Vanessa.',
 };
 
 function getResponse(msg: string): string {
@@ -25,14 +27,15 @@ function getResponse(msg: string): string {
   if (m.includes('salud') || m.includes('médic') || m.includes('medic') || m.includes('triaje') || m.includes('receta')) return RESPUESTAS.salud;
   if (m.includes('niñ') || m.includes('nin') || m.includes('tutor') || m.includes('llave') || m.includes('roblox')) return RESPUESTAS.llave;
   if (m.includes('ley') || m.includes('claudia') || m.includes('agencia') || m.includes('trámite') || m.includes('tramite')) return RESPUESTAS.ley;
-  if (m.includes('jala') || m.includes('miguel') || m.includes('candidato') || m.includes('campaña') || m.includes('campana')) return RESPUESTAS.jala;
+  if (m.includes('imagen') || m.includes('estrateg') || m.includes('tecnolog')) return RESPUESTAS.estrategia;
+  if (m.includes('jala') || m.includes('vanessa') || m.includes('morena') || m.includes('palabra') || m.includes('vamos') || m.includes('candidato') || m.includes('campaña') || m.includes('campana')) return RESPUESTAS.jala;
   if (m.includes('orbe') || m.includes('portal') || m.includes('voz')) return RESPUESTAS.orbe;
   return RESPUESTAS.default;
 }
 
 export default function AsistenteIA() {
   const [msgs, setMsgs] = useState<Message[]>([
-    { role: 'ia', text: 'Soy el asistente de la plataforma Jala Digital. Pregunta por el Orbe, la salud o la llave del tutor. No doy diagnósticos.' },
+    { role: 'ia', text: 'Soy el asistente de la campaña de Vanessa Zúñiga. Pregunta por Palabra de mujer, Morena o por qué la inteligencia artificial no es la imagen. No doy diagnósticos.' },
     { role: 'user', text: '¿La inteligencia artificial da receta?' },
     { role: 'ia', text: RESPUESTAS.salud },
   ]);
@@ -67,7 +70,7 @@ export default function AsistenteIA() {
             <div className="chat-head">
               <div className="chat-ava">🛣️</div>
               <div>
-                <span className="chat-head-t">Orbe de campaña</span>
+                <span className="chat-head-t">Palabra de mujer</span>
                 <span className="chat-head-s">Guía · no diagnostica · no pide datos</span>
               </div>
             </div>

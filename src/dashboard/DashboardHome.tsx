@@ -32,7 +32,7 @@ export default function DashboardHome({ onNavigate }: DashboardHomeProps) {
       {/* Header */}
       <div style={{ marginBottom: '2.5rem' }}>
         <span style={{ fontFamily: 'var(--mono)', fontSize: '.6rem', fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase', color: 'var(--gris)' }}>
-          Jala Digital · prototipo de campaña
+          Vanessa Zúñiga · Morena · prototipo
         </span>
         <h1 style={{ fontFamily: 'var(--frau)', fontVariationSettings: '"opsz" 144', fontWeight: 900, fontSize: 'clamp(2rem, 5vw, 3rem)', lineHeight: .95, letterSpacing: '-.035em', color: 'var(--tinta)', marginTop: '.4rem', marginBottom: '.5rem' }}>
           Nayarit Digital<br />

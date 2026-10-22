@@ -115,22 +115,22 @@ export default function Hero({ onNavigate }: HeroProps) {
       <div className="hero-texto">
         <div className="eyebrow">
           <span className="pt" />
-          Jala · Presidencia municipal · 2027
+          Morena · Jala · 2027
         </div>
         <h1 className="hero-nombre">
-          <span className="fn">Miguel</span>
-          <span className="ln">Alexis</span>
+          <span className="fn">Vanessa</span>
+          <span className="ln">Zúñiga</span>
         </h1>
         <p className="hero-cargo">
-          <strong>Jala Digital</strong>,<br />
-          el primer municipio donde el gobierno entiende al ciudadano
+          <strong>Palabra de mujer.</strong><br />
+          Por Morena, a la presidencia municipal de Jala
         </p>
         <p className="hero-tagline">
-          El ciudadano es el automóvil. <em>El gobierno es la autopista.</em><br />
-          Un Orbe, por voz, te guía. Tú no estudias el organigrama.
+          <em>Vamos.</em> El gobierno entiende al ciudadano.<br />
+          La inteligencia artificial cumple la palabra. No reemplaza el rostro.
         </p>
         <div className="hero-btns">
-          <a href="#pilares" className="btn-a">Ver la propuesta →</a>
+          <a href="#estrategia" className="btn-a">Ver la estrategia →</a>
           <button className="btn-b" onClick={() => onNavigate('dashboard')}>
             Plataforma ConnectX
           </button>
@@ -139,16 +139,16 @@ export default function Hero({ onNavigate }: HeroProps) {
 
       <div className="hero-foto">
         <div className="foto-frame" ref={fotoRef}>
-          <div className="foto-img orbe-card" role="img" aria-label="Emblema del Orbe de Jala Digital">
-            <span className="orbe-kicker">Nayarit Digital</span>
-            <strong>Un portal.</strong>
-            <em>Una voz.</em>
-            <span>Cero filas para entender quién te toca.</span>
+          <div className="foto-img palabra-card" role="img" aria-label="Lema Palabra de mujer y llamado Vamos">
+            <span className="orbe-kicker">Morena · Jala</span>
+            <strong>Palabra</strong>
+            <em>de mujer.</em>
+            <span>Vamos.</span>
           </div>
-          <div className="foto-label">Piloto municipal · Jala</div>
+          <div className="foto-label">Sin foto inventada</div>
           <div className="foto-badge">
             <span className="n">2027</span>
-            <span className="t">propuesta · no cargo</span>
+            <span className="t">campaña · no cargo</span>
           </div>
         </div>
       </div>

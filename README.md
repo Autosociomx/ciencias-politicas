@@ -1,15 +1,17 @@
-# Jala Digital
+# Vanessa Zúñiga · Palabra de mujer
 
-Plataforma de campaña para la presidencia municipal de Jala, Nayarit, en 2027.
-La figura de esta plataforma es Miguel Alexis. El municipio piloto es Jala.
+Prototipo de campaña de Vanessa Zúñiga Rafael, por Morena, a la presidencia municipal de Jala, Nayarit, en 2027.
+El lema es **Palabra de mujer**. El llamado es **Vamos**.
 El estándar técnico vive en [Gobernanza-Digital](https://github.com/Autosociomx/Gobernanza-Digital).
 
-Esto **no** es un sitio oficial del Ayuntamiento ni un respaldo de la Presidencia de la República.
+Esto **no** es un sitio oficial de Morena, del Ayuntamiento ni un respaldo de la Presidencia de la República.
+No usa el emblema del partido. En 2024 ella contendió por Morena a este mismo cargo. Esta página no afirma un registro de 2027 que todavía no se publica.
 
 ## La idea, en una frase
 
-El ciudadano es el automóvil. El gobierno es la autopista. El Orbe es la voz que guía el trámite.
-Nadie tiene que aprenderse el organigrama.
+Palabra de mujer. Vamos.
+La inteligencia artificial no construye una imagen de tecnología: escucha, ordena y deja rastro para que la palabra se pueda cumplir.
+El ciudadano es el automóvil. El gobierno es la autopista. Esa frase explica el método, no el rostro.
 
 ## Qué promete y qué no
 

@@ -5,13 +5,13 @@ export default function Frase() {
     <div className="frase wix-bg">
       <div className="frase-in rv">
         <div className="ff-wrap orbe-mini" aria-hidden="true">
-          <span>🛣️</span>
+          <span>V</span>
         </div>
         <div>
           <blockquote>
-            “{FIGURA.lema} <em>El Orbe te guía.</em> Tú no tienes que entender el organigrama.”
+            “{FIGURA.lema} <em>{FIGURA.llamado}</em>”
           </blockquote>
-          <cite>— {FIGURA.nombre} · {FIGURA.cargo}</cite>
+          <cite>— {FIGURA.nombreCompleto} · {FIGURA.partido} · Jala</cite>
         </div>
       </div>
     </div>

@@ -43,7 +43,7 @@ export default function DashboardLayout({ view, onNavigate, children }: Dashboar
             </span>
           </button>
           <p style={{ fontFamily: 'var(--mono)', fontSize: '.48rem', color: 'rgba(254,248,238,.35)', letterSpacing: '.12em', textTransform: 'uppercase', marginTop: '.3rem', paddingLeft: '1.5rem' }}>
-            Jala · Nayarit Digital
+            Vanessa Zúñiga · Morena
           </p>
         </div>
 

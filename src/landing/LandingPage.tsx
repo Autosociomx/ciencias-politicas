@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Hero from './Hero';
 import Stats from './Stats';
 import Figura from './Figura';
+import Estrategia from './Estrategia';
 import Logros from './Logros';
 import Frase from './Frase';
 import Pilares from './Pilares';
@@ -42,6 +43,7 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
       <Hero onNavigate={onNavigate} />
       <Stats />
       <Figura />
+      <Estrategia />
       <Logros />
       <Frase />
       <Pilares />

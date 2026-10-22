@@ -1,34 +1,35 @@
 import { AVISO, FIGURA } from '../campana/plataforma';
 
+
 export default function Figura() {
   return (
     <section className="sec sec-blanco" id="figura">
       <div className="wrap">
-        <span className="tag rv" style={{ background: 'var(--tinta)' }}>
-          Figura política · campaña 2027
+        <span className="tag rv" style={{ background: 'var(--guinda)' }}>
+          {FIGURA.partido} · campaña 2027
         </span>
         <h2 className="ttl rv d1">
-          Una persona.<br />
-          <em style={{ color: 'var(--magenta)' }}>Un municipio piloto.</em>
+          {FIGURA.lema}<br />
+          <em style={{ color: 'var(--guinda)' }}>{FIGURA.llamado}</em>
         </h2>
         <div className="logros-layout">
-          <article className="lg rv d1" style={{ borderTop: '5px solid var(--magenta)' }}>
-            <span className="lg-pill">No es cargo actual · es la figura de esta plataforma</span>
-            <div className="lg-t" style={{ fontSize: '1.8rem', marginTop: '.8rem' }}>{FIGURA.nombre}</div>
+          <article className="lg rv d1" style={{ borderTop: '5px solid var(--guinda)' }}>
+            <span className="lg-pill">Candidata de esta plataforma · no es cargo actual</span>
+            <div className="lg-t" style={{ fontSize: '1.8rem', marginTop: '.8rem' }}>{FIGURA.nombreCompleto}</div>
             <p className="lg-d">{FIGURA.cargo}. {FIGURA.eleccion}.</p>
             <p className="lg-d">
-              Documenta la evidencia para que un municipio pequeño cumpla la ley nacional
-              sin pedirle al ciudadano que entienda las dependencias. La fuerza de la
-              figura no es un cargo inventado: es que el prototipo se puede abrir y revisar.
+              En 2024 contendió por Morena a la presidencia de Jala. Esta página no inventa
+              una foto, un cargo ni un registro de 2027. La fuerza está en que la palabra
+              se puede abrir: ley, prototipo y folio.
             </p>
           </article>
           <div className="lg-cards">
             <article className="lg rv d2">
               <div className="lg-h">
-                <span className="lg-ic">🛣️</span>
-                <div className="lg-t">La metáfora que ordena todo</div>
+                <span className="lg-ic">🗣️</span>
+                <div className="lg-t">El rostro no es la máquina</div>
               </div>
-              <p className="lg-d">{FIGURA.lema} El Orbe es la voz que va en el camino. No hace falta saber qué dirección “te toca”.</p>
+              <p className="lg-d">{FIGURA.lema} {FIGURA.llamado} La tecnología no se pone delante de la candidata.</p>
             </article>
             <article className="lg rv d3">
               <div className="lg-h">
@@ -37,8 +38,8 @@ export default function Figura() {
               </div>
               <p className="lg-d">
                 Jala tiene cerca de 19,300 habitantes y 46 localidades, según el Censo 2020.
-                Es lo bastante concreto para probar el modelo y lo bastante visible —el elote,
-                el Ceboruco, el camino a otros municipios— para enseñarlo.
+                Es lo bastante concreto para cumplir una palabra y lo bastante visible —el elote,
+                el Ceboruco— para enseñarla.
               </p>
             </article>
             <article className="lg rv d4">
@@ -47,9 +48,9 @@ export default function Figura() {
                 <div className="lg-t">Lo que esta campaña no dice</div>
               </div>
               <p className="lg-d">
-                No dice que ya ganó. No dice que el Ayuntamiento ya opera esto. No dice que
-                la Presidenta de la República respalda a esta persona. Dice con qué ley
-                nacional quiere cumplir.
+                No dice que ya ganó en 2024. No dice que el Ayuntamiento ya opera esto.
+                No dice que la Presidenta respalda esta candidatura. Dice por qué partido va
+                y con qué ley nacional quiere cumplir.
               </p>
             </article>
           </div>

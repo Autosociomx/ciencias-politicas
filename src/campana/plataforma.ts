@@ -5,14 +5,33 @@
  */
 
 export const FIGURA = {
-  nombre: 'Miguel Alexis',
-  cargo: 'Figura cívica de Jala Digital',
+  nombre: 'Vanessa Zúñiga',
+  nombreCompleto: 'Vanessa Zúñiga Rafael',
+  partido: 'Morena',
+  cargo: 'Campaña por Morena a la presidencia municipal de Jala',
   eleccion: 'Presidencia municipal de Jala · 2027',
-  lema: 'El ciudadano es el automóvil. El gobierno es la autopista.',
+  lema: 'Palabra de mujer.',
+  llamado: 'Vamos.',
+  metodo: 'El ciudadano es el automóvil. El gobierno es la autopista.',
 } as const;
 
 export const AVISO =
-  'Plataforma de campaña y prototipo cívico. No es un sitio oficial del Ayuntamiento de Jala ni un respaldo de la Presidencia de la República. Busca cumplir e interoperar con la Ley Nacional para Eliminar Trámites Burocráticos (DOF, 16 de julio de 2025), la Agencia de Transformación Digital y Telecomunicaciones y Llave MX.';
+  'Prototipo de campaña de Vanessa Zúñiga por Morena. No es un sitio oficial del partido, del Ayuntamiento de Jala ni un respaldo de la Presidencia de la República. No usa el emblema oficial de Morena. En 2024 ella contendió por Morena a esta misma presidencia; esta página no afirma un registro de 2027 que todavía no se publica. Busca cumplir la Ley Nacional para Eliminar Trámites Burocráticos (DOF, 16 de julio de 2025), con Llave MX y la Agencia de Transformación Digital y Telecomunicaciones.';
+
+export const ESTRATEGIA_IA = [
+  {
+    titulo: 'Escuchar antes de prometer',
+    texto: 'La inteligencia artificial ordena lo que Jala ya pide: baches, predial, citas, permisos. La candidata habla de eso. No de una marca de tecnología.',
+  },
+  {
+    titulo: 'Hacer comprobable la palabra',
+    texto: 'Cada compromiso de campaña se puede abrir: una ley, un folio o un prototipo. Palabra de mujer no es un retrato. Es una promesa que deja rastro.',
+  },
+  {
+    titulo: 'Acompañar, no sustituir',
+    texto: 'Después del voto, el Orbe guía el trámite por voz. La cara sigue siendo Vanessa. La máquina no diagnostica, no receta y no inventa biografía.',
+  },
+] as const;
 
 export const PILARES = [
   {
@@ -88,7 +107,7 @@ export const RUTA = [
   {
     cuando: '2027 · Campaña',
     titulo: 'Jala, primer municipio',
-    texto: 'La presidencia municipal se discute con un Orbe visible: un trámite, una ficha de salud y una llave de tutor. No con un organigrama.',
+    texto: 'La presidencia se discute con palabra de mujer: un trámite, una ficha de salud y una llave de tutor. La tecnología acompaña. No es el rostro.',
     ahora: false,
   },
   {
@@ -100,20 +119,22 @@ export const RUTA = [
 ] as const;
 
 export const MENSAJES = [
+  { audiencia: 'El lema', linea: 'Palabra de mujer. Lo que se dice en campaña se puede abrir y revisar.' },
+  { audiencia: 'El llamado', linea: 'Vamos. Jala no espera a que el ciudadano aprenda el organigrama.' },
   { audiencia: 'Familias', linea: 'Tu trámite cabe en una conversación. No en una fila.' },
-  { audiencia: 'Campo', linea: 'El elote de Jala también merece un mapa, no solo una promesa de apoyo.' },
-  { audiencia: 'Comercio', linea: 'Predial y licencia desde el celular, con recibo que se puede enseñar.' },
+  { audiencia: 'Campo', linea: 'El elote de Jala también merece palabra cumplida, no solo una promesa de apoyo.' },
   { audiencia: 'Madres y padres', linea: 'La llave del niño la tienes tú. La red no se queda con su nombre.' },
   { audiencia: 'Salud', linea: 'Llegas con una ficha. El médico decide. La máquina no receta.' },
-  { audiencia: 'Cabildo', linea: 'No pedimos otro sistema paralelo. Pedimos cumplir la ley nacional y dejar rastro.' },
 ] as const;
 
 export const GUION = [
-  'En Jala nadie debería estudiar el organigrama para ser atendido.',
+  'Palabra de mujer.',
+  'Vamos.',
+  'Soy Vanessa Zúñiga y voy por Morena a la presidencia de Jala.',
+  'En 2024 ya puse el nombre. En 2027 la palabra se puede comprobar.',
+  'Nadie en Jala debería estudiar el organigrama para ser atendido.',
   'El ciudadano es el automóvil. El gobierno tiene que ser la autopista.',
-  'Por eso Jala Digital cabe en un Orbe: una voz que te guía por el trámite, en un solo portal, sin mandarte de oficina en oficina.',
-  'Eso no es un invento local. Es cumplir la ley nacional de 2025, usar Llave MX y acoplarnos a la Agencia de Transformación Digital.',
-  'En salud, el Orbe ordena la urgencia con cinco colores y te entrega una ficha. No diagnostica y no da receta.',
-  'En la niñez, la llave la tiene el tutor. La plataforma solo recibe si hay permiso, nunca los datos del niño.',
-  'Jala puede ser el primer municipio de Nayarit que se digitalice así: pequeño, comprobable y listo para compartirse.',
+  'La inteligencia artificial no es mi imagen. Es la forma de cumplir: un portal, una voz que guía y un folio que se puede enseñar.',
+  'En salud, esa voz ordena la urgencia y entrega la ficha. No diagnostica y no da receta.',
+  'En la niñez, la llave la tiene el tutor. La plataforma no se queda con los datos del niño.',
 ] as const;
