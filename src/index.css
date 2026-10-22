@@ -6,6 +6,7 @@
 ════════════════════════════════════════ */
 :root {
   --magenta:  #E5007A;
+  --guinda:   #8E1B45;
   --turq:     #00BCD4;
   --solar:    #FFB300;
   --verde:    #00873E;
@@ -243,6 +244,30 @@ nav.sombra { box-shadow: 0 6px 28px rgba(21,8,0,.1); }
   object-fit:cover; object-position:top center;
   display:block; border-radius:.8rem; filter:saturate(1.06);
 }
+.orbe-card {
+  display:flex; flex-direction:column; justify-content:flex-end; gap:.35rem;
+  padding:1.4rem; color:var(--crema);
+  background:
+    radial-gradient(circle at 50% 42%, var(--solar) 0 18%, transparent 19%),
+    linear-gradient(160deg, var(--tinta), #3a1248 70%);
+  object-fit:unset; filter:none;
+}
+.orbe-card .orbe-kicker { font-family:var(--mono); font-size:.62rem; letter-spacing:.16em; text-transform:uppercase; color:var(--solar); }
+.orbe-card strong { font-family:var(--frau); font-size:2.4rem; line-height:.95; }
+.orbe-card em { font-family:var(--frau); font-size:2rem; color:var(--magenta); }
+.orbe-card span:last-child { font-size:.85rem; max-width:16rem; color:rgba(254,248,238,.8); }
+.palabra-card {
+  display:flex; flex-direction:column; justify-content:flex-end; gap:.2rem;
+  padding:1.5rem; color:#fff; filter:none; object-fit:unset;
+  background:linear-gradient(165deg,#4d1024 0%,var(--guinda) 58%,#c46a2d 140%);
+}
+.palabra-card strong { font-family:var(--frau); font-size:clamp(2.4rem,5vw,3.4rem); line-height:.9; }
+.palabra-card em { font-family:var(--frau); font-size:clamp(2rem,4vw,2.8rem); color:#ffe08a; }
+.palabra-card span:last-child { font-family:var(--frau); font-weight:900; font-size:2rem; color:#fff; margin-top:.6rem; }
+.orbe-mini { display:flex; align-items:center; justify-content:center; background:var(--tinta); color:var(--solar); font-size:3rem; aspect-ratio:1; border-radius:50%; }
+.guion { margin:2rem 0 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:.7rem; counter-reset:guion; }
+.guion li { counter-increment:guion; background:var(--crema); border-radius:.8rem; padding:.85rem 1rem .85rem 3.2rem; position:relative; font-size:.92rem; line-height:1.5; }
+.guion li::before { content:counter(guion, decimal-leading-zero); position:absolute; left:.8rem; top:.9rem; font-family:var(--mono); font-size:.62rem; color:var(--morado); }
 .foto-label {
   position:absolute; top:-12px; right:-10px;
   background:var(--magenta); color:var(--blanco);

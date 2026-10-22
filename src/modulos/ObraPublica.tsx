@@ -9,7 +9,7 @@ const modulo = MODULOS.find((m) => m.id === 'mod-obra-publica')!;
 const NIVELES = [
   { rol: 'Ciudadano', acceso: 'Lectura pública', ic: '👁️', color: 'var(--turq)' },
   { rol: 'Supervisor de obra', acceso: 'Carga de avance semanal + fotos geolocalizadas', ic: '🏗️', color: 'var(--solar)' },
-  { rol: 'Presidenta Municipal', acceso: 'Auditoría completa + alertas + exportación', ic: '🏛️', color: 'var(--magenta)' },
+  { rol: 'Presidencia municipal', acceso: 'Auditoría completa + alertas + exportación', ic: '🏛️', color: 'var(--magenta)' },
 ];
 
 export default function ObraPublica({ onBack }: Props) {
@@ -34,7 +34,7 @@ export default function ObraPublica({ onBack }: Props) {
       <div style={{ display: 'flex', gap: '.7rem', flexDirection: 'column', marginBottom: '1.5rem' }}>
         {[
           { trigger: 'Obra sin actualizar por 2 semanas', accion: 'Alerta a supervisor + Contraloría', severity: 'amarilla' },
-          { trigger: 'Costo excede 10% del presupuesto original', accion: 'Alerta a Presidenta + reporte automático', severity: 'roja' },
+          { trigger: 'Costo excede 10% del presupuesto original', accion: 'Alerta a Presidencia + reporte automático', severity: 'roja' },
           { trigger: 'Avance < 50% con plazo vencido', accion: 'Reporte público + alerta a equipo de comunicación', severity: 'roja' },
         ].map((a) => (
           <div key={a.trigger} style={{ background: 'var(--blanco)', border: '1.5px solid rgba(21,8,0,.1)', borderRadius: '.8rem', padding: '.9rem 1.1rem', display: 'flex', gap: '1rem', alignItems: 'center' }}>
@@ -51,7 +51,7 @@ export default function ObraPublica({ onBack }: Props) {
         <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>🏆</span>
         <div>
           <p style={{ fontFamily: 'var(--frau)', fontVariationSettings: '"opsz" 30', fontStyle: 'italic', fontWeight: 600, fontSize: '1rem', color: '#fff', lineHeight: 1.4, marginBottom: '.4rem' }}>
-            "Primera obra pública con trazabilidad pública en Nayarit. En el debate: 'Aquí está cada peso de obra de Tepic, visible para todos.'"
+            "Cada peso de obra de Jala, visible cuando la obra exista en el tablero. Hoy es el diseño de esa visibilidad."
           </p>
           <p style={{ fontFamily: 'var(--mono)', fontSize: '.55rem', color: 'rgba(255,255,255,.7)', letterSpacing: '.1em', textTransform: 'uppercase' }}>
             Argumento electoral · Plan Operativo ConnectX 2026

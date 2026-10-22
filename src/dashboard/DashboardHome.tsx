@@ -18,10 +18,10 @@ const ESTADO_COLORS: Record<Modulo['estado'], { bg: string; text: string; dot: s
 };
 
 const KPI_GLOBAL = [
-  { label: '% trámites digitalizados', actual: '~15%', meta6m: '50%', color: 'var(--magenta)' },
-  { label: 'Colonias con servicios digitales', actual: '0 / 250', meta6m: '3 piloto', color: 'var(--turq)' },
-  { label: 'Reportes ciudadanos / mes', actual: 'Manual', meta6m: '500', color: 'var(--solar)' },
-  { label: 'Recaudación predial digital', actual: 'Base', meta6m: '+20%', color: '#5DD39E' },
+  { label: '% trámites digitalizados', actual: '0%', meta6m: '50%', color: 'var(--magenta)' },
+  { label: 'Localidades con piloto', actual: '0 / 46', meta6m: '3 piloto', color: 'var(--turq)' },
+  { label: 'Reportes ciudadanos / mes', actual: 'Sin medir', meta6m: 'Propuesta', color: 'var(--solar)' },
+  { label: 'Recaudación predial digital', actual: 'Sin medir', meta6m: 'Con recibo', color: '#5DD39E' },
 ];
 
 export default function DashboardHome({ onNavigate }: DashboardHomeProps) {
@@ -32,14 +32,14 @@ export default function DashboardHome({ onNavigate }: DashboardHomeProps) {
       {/* Header */}
       <div style={{ marginBottom: '2.5rem' }}>
         <span style={{ fontFamily: 'var(--mono)', fontSize: '.6rem', fontWeight: 600, letterSpacing: '.2em', textTransform: 'uppercase', color: 'var(--gris)' }}>
-          ConnectX × Ayuntamiento de Tepic
+          Vanessa Zúñiga · Morena · prototipo
         </span>
         <h1 style={{ fontFamily: 'var(--frau)', fontVariationSettings: '"opsz" 144', fontWeight: 900, fontSize: 'clamp(2rem, 5vw, 3rem)', lineHeight: .95, letterSpacing: '-.035em', color: 'var(--tinta)', marginTop: '.4rem', marginBottom: '.5rem' }}>
           Nayarit Digital<br />
           <em style={{ color: 'var(--magenta)', fontStyle: 'italic' }}>Dashboard Central</em>
         </h1>
         <p style={{ fontFamily: 'var(--frau)', fontVariationSettings: '"opsz" 30', fontStyle: 'italic', fontSize: '1rem', color: 'var(--gris)' }}>
-          Plan de implementación · Junio 2026 · 9 módulos ConnectX
+          Propuesta municipal · no es el tablero del Ayuntamiento en operación
         </p>
       </div>
 

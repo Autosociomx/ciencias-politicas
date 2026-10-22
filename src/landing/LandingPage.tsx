@@ -3,9 +3,12 @@ import type { AppView } from '../types';
 import Nav from './Nav';
 import Hero from './Hero';
 import Stats from './Stats';
+import Figura from './Figura';
+import Estrategia from './Estrategia';
 import Logros from './Logros';
 import Frase from './Frase';
 import Pilares from './Pilares';
+import Orbe from './Orbe';
 import AsistenteIA from './AsistenteIA';
 import Ruta from './Ruta';
 import Redes from './Redes';
@@ -39,9 +42,12 @@ export default function LandingPage({ onNavigate }: LandingPageProps) {
       <Nav onNavigate={onNavigate} />
       <Hero onNavigate={onNavigate} />
       <Stats />
+      <Figura />
+      <Estrategia />
       <Logros />
       <Frase />
       <Pilares />
+      <Orbe />
       <AsistenteIA />
       <Ruta />
       <Redes />

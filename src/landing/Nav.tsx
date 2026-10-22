@@ -20,12 +20,12 @@ export default function Nav({ onNavigate }: NavProps) {
     <nav ref={navRef} id="nav">
       <a href="#inicio" className="nav-logo">
         <span className="gema" />
-        Geraldine Ponce
+        Vanessa Zúñiga
       </a>
       <ul className="nav-links">
-        <li><a href="#logros">Logros</a></li>
+        <li><a href="#figura">Morena</a></li>
+        <li><a href="#estrategia">Estrategia</a></li>
         <li><a href="#pilares">Propuesta</a></li>
-        <li><a href="#ia">Asistente IA</a></li>
         <li>
           <button
             className="nav-links"
@@ -41,7 +41,7 @@ export default function Nav({ onNavigate }: NavProps) {
             </span>
           </button>
         </li>
-        <li><a href="#comunidad" className="nav-cta">Únete</a></li>
+        <li><a href="#comunidad" className="nav-cta">Vamos</a></li>
       </ul>
     </nav>
   );

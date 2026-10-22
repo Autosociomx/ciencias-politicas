@@ -115,22 +115,22 @@ export default function Hero({ onNavigate }: HeroProps) {
       <div className="hero-texto">
         <div className="eyebrow">
           <span className="pt" />
-          Nayarit · Gobernatura · 2027
+          Morena · Jala · 2027
         </div>
         <h1 className="hero-nombre">
-          <span className="fn">Geraldine</span>
-          <span className="ln">Ponce</span>
+          <span className="fn">Vanessa</span>
+          <span className="ln">Zúñiga</span>
         </h1>
         <p className="hero-cargo">
-          <strong>Presidenta Municipal de Tepic</strong>,<br />
-          primera mujer en gobernar la capital de Nayarit
+          <strong>Palabra de mujer.</strong><br />
+          Por Morena, a la presidencia municipal de Jala
         </p>
         <p className="hero-tagline">
-          La gobernante que <em>ya transformó Tepic.</em><br />
-          Ahora lleva ese cambio a los 20 municipios de Nayarit.
+          <em>Vamos.</em> El gobierno entiende al ciudadano.<br />
+          La inteligencia artificial cumple la palabra. No reemplaza el rostro.
         </p>
         <div className="hero-btns">
-          <a href="#pilares" className="btn-a">Ver la propuesta →</a>
+          <a href="#estrategia" className="btn-a">Ver la estrategia →</a>
           <button className="btn-b" onClick={() => onNavigate('dashboard')}>
             Plataforma ConnectX
           </button>
@@ -139,16 +139,16 @@ export default function Hero({ onNavigate }: HeroProps) {
 
       <div className="hero-foto">
         <div className="foto-frame" ref={fotoRef}>
-          <img
-            className="foto-img"
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=800&fit=crop&crop=faces&auto=format&q=85"
-            alt="Geraldine Ponce — Presidenta Municipal de Tepic"
-            loading="eager"
-          />
-          <div className="foto-label">1ª Presidenta Municipal de Tepic</div>
+          <div className="foto-img palabra-card" role="img" aria-label="Lema Palabra de mujer y llamado Vamos">
+            <span className="orbe-kicker">Morena · Jala</span>
+            <strong>Palabra</strong>
+            <em>de mujer.</em>
+            <span>Vamos.</span>
+          </div>
+          <div className="foto-label">Sin foto inventada</div>
           <div className="foto-badge">
-            <span className="n">30</span>
-            <span className="t">años · Tepic</span>
+            <span className="n">2027</span>
+            <span className="t">campaña · no cargo</span>
           </div>
         </div>
       </div>

@@ -28,10 +28,10 @@ export default function AgroVision({ onBack }: Props) {
       </div>
 
       <h2 style={{ fontFamily: 'var(--frau)', fontVariationSettings: '"opsz" 60', fontWeight: 900, fontSize: '1.1rem', color: 'var(--tinta)', marginBottom: '1rem', letterSpacing: '-.02em' }}>
-        Cultivos objetivo — Zona periurbana Tepic
+        Cultivos de referencia — municipio de Jala
       </h2>
       <div style={{ display: 'flex', gap: '.6rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
-        {['Maíz', 'Sorgo', 'Caña de azúcar', 'Huertos de mango', 'Aguacate', 'Hortalizas', 'Flores de ornato'].map((c) => (
+        {['Maíz de Jala', 'Frijol', 'Caña', 'Aguacate', 'Hortalizas de traspatio'].map((c) => (
           <span key={c} style={{ fontFamily: 'var(--mono)', fontSize: '.58rem', fontWeight: 600, letterSpacing: '.08em', background: 'rgba(0,135,62,.1)', color: 'var(--verde)', padding: '.25rem .7rem', borderRadius: '2rem', border: '1px solid rgba(0,135,62,.2)' }}>
             🌱 {c}
           </span>
@@ -41,7 +41,7 @@ export default function AgroVision({ onBack }: Props) {
       <div style={{ background: 'var(--verde)', borderRadius: '1rem', padding: '1.2rem 1.4rem', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
         <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>🗺️</span>
         <p style={{ fontFamily: 'var(--frau)', fontVariationSettings: '"opsz" 30', fontStyle: 'italic', fontWeight: 600, fontSize: '1rem', color: '#fff', lineHeight: 1.4 }}>
-          "Llego con el mapa ya hecho. Los demás llegan con promesas. Esta tecnología escala a toda la sierra nayarita en el sexenio."
+          "El mapa se enseña cuando esté hecho. Hasta entonces es una propuesta para el municipio del elote, no una cosecha medida."
         </p>
       </div>
     </ModuloShell>
